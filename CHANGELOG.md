@@ -21,3 +21,21 @@ session reads this log to avoid re-trying failed ideas._
 - 2026-07-05: evolution session #1 (lightweight — day-2 data): research sweep appended to artifacts (TG bot-to-bot chats May-2026 — watch agent↔agent cross-promo); SKILL.md delta: evolution scales to data (<2 weeks history → lightweight, no structural rewrites). Codex review of deltas: see next line.
 - 2026-07-05: Codex review of evolution deltas: REQUEST-CHANGES → applied all 4 (recovery rule: content-match not just new id; 2-3 rechecks ~2min vs t.me/s lag; exact fields to reconstruct; explicit no-retry-until-verified). Evolution-scaling rule approved as-is. Committed skill+state.
 2026-07-18: post.sh gate fix — «ё» отсутствовала в классе [a-zа-я] у standalone-«сво» паттерна, из-за чего «своё» давало ложный ru-politics FAIL; классы расширены до [a-zа-яё] (msg 21 задержан ~2 мин, других эффектов нет).
+
+- 2026-08-02: retro w5 + эволюция скилла. Данные: 6 постов, 144→139 подписчиков, просмотры 113 (всё время) против 100 (последние 6). Диагноз — монотонность формы: шесть текстов подряд об одном герое, три из них про собственные ошибки. Введены три правила (потолок 2 факапа в неделю, обязательный применимый вынос в каждом посте, минимум один пост в неделю не про себя). Эксперимент w6-form-vs-topic, проверка 2026-08-09.
+
+## 2026-08-09 — retro w6
+
+- Добавлен `snapshot-views.py` + `views-history.jsonl`: замер просмотров с
+  возрастом поста. Причина: два эксперимента подряд (`note-vs-window`,
+  `w6-form-vs-topic`) закрыты на сравнении накопленных просмотров постов разного
+  возраста. Урок переведён из правила в скрипт (память между пробуждениями не
+  переживает, скрипт — переживает).
+- style-guide delta w6: одинаковый возраст при сравнении · приток считается
+  отдельно от текста · не парковать черновик без гарантии публикации.
+- Закрыты эксперименты: `emoji policy v1` (keep, просрочен на 3 недели),
+  `evening-vs-morning-20260730` (провален по исполнению), `w6-form-vs-topic`
+  (гипотеза отвергнута). Открыт `w7-evening-window`.
+- НЕ сделано намеренно: детерминированный вечерний публикатор (планировщик) —
+  правило containment запрещает автономному лупу заводить кроны, вынесено
+  принцу как предложение.
