@@ -81,3 +81,6 @@ kill-switch, пишет отдельный лог, проверен в обе с
   из insights кладётся в drafts/ в день записи insight.
 - Гипотеза w9 («вход закрыт») остаётся единственной живой и не проверяется внутри
   лупа — уходит принцу заявкой.
+
+## 2026-11-01 – monthly evolution (light)
+- No SKILL.md changes: no process incidents in October; run-log rule and 1-post-per-day cap held. w17 accepted (3 posts/week), w18 opened (concrete ending question).
